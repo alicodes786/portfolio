@@ -3,8 +3,16 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ExternalLink, Github } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
 export function Portfolio() {
+  const [isClient, setIsClient] = useState(false)
+
+  // Set isClient to true after the component mounts to avoid hydration issues
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   const projects = [
     {
       title: "E-commerce Platform",
@@ -48,6 +56,11 @@ export function Portfolio() {
     },
   ]
 
+  // Return null during SSR to avoid hydration errors
+  if (!isClient) {
+    return null
+  }
+
   return (
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="container mx-auto">
@@ -56,9 +69,9 @@ export function Portfolio() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="bg-[#121212] border-gray-800 overflow-hidden group"
+              className="bg-[#121212] border-gray-800 overflow-hidden group transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden group">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -67,7 +80,7 @@ export function Portfolio() {
                   className="object-cover group-hover:scale-110 transition-transform duration-300 filter grayscale group-hover:grayscale-0"
                 />
               </div>
-              <CardContent className="p-6 space-y-4">
+              <CardContent className="p-6 space-y-4 group-hover:text-white transition-colors duration-300 ease-in-out">
                 <h3 className="text-xl font-semibold text-white">{project.title}</h3>
                 <p className="text-[#D4D4D4]">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
