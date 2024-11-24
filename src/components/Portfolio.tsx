@@ -14,45 +14,46 @@ export function Portfolio() {
   }, [])
 
   const projects = [
+   
     {
-      title: "E-commerce Platform",
-      description: "A scalable e-commerce platform built using Next.js and MongoDB.",
-      tech: ["Next.js", "Node.js", "MongoDB", "Stripe"],
-      demo: "#",
-      code: "#",
-      image: "/placeholder.svg",
+      title: "FitEmirates, E-commerce Platform",
+      description: "A custom-coded e-commerce website, which can handle all important operations like product viewing, filtering, checkout, cart and Stripe.",
+      tech: ["Nextjs","Supabase","Cloudflare","Drizzle ORM","Docker","React","PostgreSQL"],
+      demo: "https://fitemirates.vercel.app/",
+      code: "https://github.com/aryanprince/fitemirates",
+      image: "/fitemirates.png",
     },
     {
-      title: "AI Content Manager",
-      description: "Content management system with AI-powered content generation and optimization features.",
-      tech: ["React", "Python", "OpenAI", "PostgreSQL"],
+      title: "Portfolio of Mine",
+      description: "Developed this portfolio for you to get a brief idea about my experience and projects timeline",
+      tech: ["Next.js", "TailwindCSS", "Shadcn", "Supabase", "SendGrid"],
       demo: "#",
-      code: "#",
-      image: "/placeholder.svg",
+      code: "https://github.com/alicodes786/portfolio",
+      image: "/portfolio.png",
     },
     {
-      title: "Real-time Analytics Dashboard",
-      description: "Interactive dashboard for real-time data visualization and analysis.",
-      tech: ["Next.js", "Socket.io", "Redis", "D3.js"],
+      title: "PitchDeckAI",
+      description: "An AI-powered tool which generates pitch decks for startups allowing them to pitch it to their investors or partners, it includes templates as well.",
+      tech: ["Nextjs","Supabase","SlidesAI","OpenAI","TailwindCSS","Node.js", "Express", "MongoDB"],
       demo: "#",
-      code: "#",
-      image: "/placeholder.svg",
+      code: "https://github.com/alicodes786/PitchDeckAI",
+      image: "/PitchDeckAI.png",
     },
     {
-      title: "Social Media Scheduler",
-      description: "A tool for scheduling and managing social media posts across multiple platforms.",
-      tech: ["React", "Node.js", "Express", "MongoDB"],
+      title: "Actable - Accountability App",
+      description: "A SaaS mobile app which helps user to track their deadlines and goals, keeping them accountable for it.",
+      tech: ["React Native","Expo","Supabase","Nativewind","SendGrid","make","Element UI"],
       demo: "#",
-      code: "#",
-      image: "/placeholder.svg",
+      code: "https://github.com/alicodes786/Actable",
+      image: "/actable-sample.png",
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates and team features.",
-      tech: ["Vue.js", "Firebase", "Vuex", "Element UI"],
-      demo: "#",
-      code: "#",
-      image: "/placeholder.svg",
+      title: "CrptoVerse",
+      description: "A social platform developed for Cryto enthusiasts, which also displays live cryptocurrency rates of every coin.",
+      tech: ["React.js", "Node.js", "Firebase", "Tailwind"],
+      demo: "https://crypto-verse-ten.vercel.app/CryptoVerse/markets",
+      code: "https://github.com/alicodes786/CryptoWall",
+      image: "/cryptoverse.png",
     },
   ]
 
@@ -77,7 +78,7 @@ export function Portfolio() {
                   alt={project.title}
                   width={400}
                   height={200}
-                  className="object-cover group-hover:scale-110 transition-transform duration-300 filter grayscale group-hover:grayscale-0"
+                  className="object-cover group-hover:scale-110 transition-transform duration-300 filter group-hover:grayscale-0"
                 />
               </div>
               <CardContent className="p-6 space-y-4 group-hover:text-white transition-colors duration-300 ease-in-out">
