@@ -16,8 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
+      <body
+        className={`${inter.className} bg-gradient-to-b from-[#000000] to-[#121212] min-h-screen flex items-center justify-center`}
+      >
+        <div className="w-full max-w-7xl mx-auto">
+          {children}
+        </div>
       </body>
     </html>
   )

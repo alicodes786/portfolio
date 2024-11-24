@@ -22,7 +22,7 @@ export default function Component() {
   }, [isDarkMode])
 
   return (
-    <div className={`min-h-screen ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
+    <div className={`min-h-screen ${isDarkMode ? 'bg-gradient-to-b from-[#000000] to-[#121212]' : 'bg-gradient-to-b from-white to-[#f4f4f4]'}`}>
       <Navbar />
       {/* Theme Toggle */}
       <button
