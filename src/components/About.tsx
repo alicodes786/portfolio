@@ -27,19 +27,26 @@ export function About() {
               growth.
             </p>
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-black"
-              >
-                Download CV
-              </Button>
-            </motion.div>
+  initial={{ opacity: 0, scale: 0.8 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.5, delay: 0.3 }}
+>
+  <Button
+    variant="outline"
+    size="lg"
+    className="border-white text-white hover:bg-white hover:text-black"
+    asChild
+  >
+    <a
+      href="/myResumeMirzaAliHassan.pdf"
+      download="MyCVMirzaAliHassan.pdf"
+      className="flex items-center justify-center"
+    >
+      Download CV
+    </a>
+  </Button>
+</motion.div>
           </motion.div>
 
           {/* Skill Cards */}
