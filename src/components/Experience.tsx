@@ -5,28 +5,28 @@ import { useInView } from "react-intersection-observer";
 export function Experience() {
   const experiences = [
     {
-      role: "Full Stack Developer",
-      company: "FitEmirates",
+      role: "Head of Product",
+      company: "Noharm.tech",
       duration: "10/2024 - Present",
       description:
-        "Developed a full-stack e-commerce site using Next.js for a fitness equipment business. Integrated features like dynamic product pages, cart system, user authentication, and secure payment processing. Implemented REST APIs to manage inventory, orders, and user data efficiently.",
+        "Developed a full-stack onboarding platform using Next.js for a climate tech marketplace (upcoming). Integrated features like link tracking, AI-powered docs scanner and full-fledged onboarding user journey for climate tech sellers.",
       tech: ["Next.js", "Supabase", "Drizzle ORM", "Cloudflare", "TailwindCSS", "Stripe", "Vercel"],
     },
     {
-      role: "React Native Mobile Developer",
-      company: "Actable Accountability App",
-      duration: "10/2024 - Present",
+      role: "Senior Web Developer",
+      company: "OptimizeeGroup (Cryptorunner)",
+      duration: "09/2022 - Present (Contract-based)",
       description:
-        "Built a mobile app using React Native combining AI and human coaching for tracking deadlines and accountability. Integrated push notifications, real-time updates, and local storage. Implemented responsive UI/UX designs and optimized performance. Developed database using Supabase and connected with Frontend using APIs.",
-      tech: ["React Native", "Supabase", "TailwindCSS"],
+        "Built a portfolio website, crypto investment's full stack system where users can compare prices between different coins and investment options",
+      tech: ["React Elements", "CSS", "Wordpress backend"],
     },
     {
-      role: "Software Developer",
+      role: "Software Developer in AI",
       company: "Axone Accelerate",
       duration: "09/2023 - 09/2024",
       description:
         "Responsible for building AI Automation Workflows and developing AI Assistants tailored for clients. Developed customised AI Models for client systems to enhance business processes. Worked with Real estate, Recruitment, Marketing, E-commerce and Education clients.",
-      tech: ["AI", "Automation", "Custom Models"],
+      tech: ["AI", "Automation", "Custom Models", "ReactJS"],
     },
     {
       role: "Software Engineer",

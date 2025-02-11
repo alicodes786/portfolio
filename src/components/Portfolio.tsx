@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
@@ -32,20 +32,12 @@ export function Portfolio() {
       image: "/portfolio.png",
     },
     {
-      title: "PitchDeckAI",
-      description: "An AI-powered tool which generates pitch decks for startups allowing them to pitch it to their investors or partners, it includes templates as well.",
-      tech: ["Nextjs","Supabase","SlidesAI","OpenAI","TailwindCSS","Node.js", "Express", "MongoDB"],
-      demo: "#",
+      title: "Cryptorunner",
+      description: "An investment comparison website for cryptocurrencies, investment stocks, options and much more",
+      tech: ["React (frontend)", "TailwindCSS", "Wordpress backend", "MySQL", "PHP"],
+      demo: "https://cryptorunner.com/",
       code: "https://github.com/alicodes786/PitchDeckAI",
-      image: "/PitchDeckAI.png",
-    },
-    {
-      title: "Actable - Accountability App",
-      description: "A SaaS mobile app which helps user to track their deadlines and goals, keeping them accountable for it.",
-      tech: ["React Native","Expo","Supabase","Nativewind","SendGrid","make","Element UI"],
-      demo: "#",
-      code: "https://github.com/alicodes786/Actable",
-      image: "/actable-sample.png",
+      image: "/cryptorunner.png",
     },
     {
       title: "CrptoVerse",
@@ -65,7 +57,7 @@ export function Portfolio() {
   return (
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center text-white">Projects</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center text-white">Notable Projects</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card
@@ -106,17 +98,7 @@ export function Portfolio() {
                       Demo
                     </Link>
                   </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-white text-white hover:bg-white hover:text-black flex items-center gap-2"
-                    asChild
-                  >
-                    <Link href={project.code}>
-                      <Github className="h-4 w-4" />
-                      Code
-                    </Link>
-                  </Button>
+                  
                 </div>
               </CardContent>
             </Card>
